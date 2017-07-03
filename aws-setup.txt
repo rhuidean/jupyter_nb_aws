@@ -1,0 +1,15 @@
+1) Create & Connect to AWS EC2 instance on Git Bash Terminal
+
+	Browse to .pem file on the local machine
+
+	Change the access control of the .pem file
+	-> chmod 400 jason-lee.pem ()
+
+	Connect to your AWS EC2 instance using its Public DNS through SSH protcol
+	-> ssh -i "jason-lee.pem" ubuntu@ec2-54-149-216-37.us-west-2.compute.amazonaws.com
+
+
+2) AWS EC2 instance Ubuntu anaconda a.k.a. jupyter notebook setup
+
+
+
