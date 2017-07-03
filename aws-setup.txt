@@ -11,5 +11,25 @@
 
 2) AWS EC2 instance Ubuntu anaconda a.k.a. jupyter notebook setup
 
+	Download the latest anaconda package in the ubuntu using wget from https://repo.continuum.io/archive/
+	->wget http://repo.continuum.io/archive/Anaconda2-4.3.0-Linux-x86_64.sh
 
+	Install anaconda package
+	->bash Anaconda3-4.3.0-Linux-x86_64.sh
 
+	Reload the bash settings
+	->source .bashrc
+
+	Check python
+	->which python
+
+	Activate ipython
+	-> ipython
+
+	Download ipython password module
+	-> from IPython.lib import passwd
+
+	Enter password
+	Verify password
+	->in lj7767
+	->out sha1:13e14f7739c6:d058f8187efd7eb43462267ca26e4097f67fa91c
