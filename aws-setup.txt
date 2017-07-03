@@ -33,3 +33,19 @@
 	Verify password
 	->in lj7767
 	->out sha1:13e14f7739c6:d058f8187efd7eb43462267ca26e4097f67fa91c
+
+	Exit ipython
+	->exit
+
+3) Create iPython Notebook profile
+
+	Server iPython configuration
+	->ipython profile create nbserver
+
+	Create and browe to cert folder
+	->mkidr certs
+	->cd certs
+
+	Create self-signed SSL certificate (root command)
+	->sudo openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout mycert.pem -out mycert.pem
+	->enter for personal information
