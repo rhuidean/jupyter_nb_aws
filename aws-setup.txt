@@ -38,9 +38,10 @@
 	->exit
 
 3) Create iPython Notebook profile
-
 	Server iPython configuration
 	->ipython profile create nbserver
+
+	->jupyter notebook --generate-config
 
 	Create and browe to cert folder
 	->mkidr certs
@@ -49,3 +50,23 @@
 	Create self-signed SSL certificate (root command)
 	->sudo openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout mycert.pem -out mycert.pem
 	->enter for personal information
+
+4) Change configuration file
+	Browse into configuration file folder
+	->cd ~/.ipython/profile_nbserver
+
+	cd ~/.jupyter/
+	vi jupyter_notebook_config.py
+
+	^C 
+
+5) Start IPython Notebook on the remote server
+	
+	cd ~
+	mkdir iPython_Notebooks
+	cd iPython_Notebooks
+
+	ipython notebook --profile=nbserver
+
+	https://ec2-54-149-216-37.us-west-2.compute.amazonaws.com:8888/
+
